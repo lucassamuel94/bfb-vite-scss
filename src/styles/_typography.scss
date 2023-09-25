@@ -1,5 +1,5 @@
-@use 'colors' as *;
-@use 'fonts' as *;
+@use 'colors';
+@use 'fonts';
 
 /**
  * Typography
@@ -7,62 +7,61 @@
 
 html,
 body {
-  font-family: $body-font;
-  font-weight: $body-font-weight;
+	font-family: fonts.$body-font;
+	font-weight: fonts.$body-font-weight;
 }
 
 html {
-  font-size: $basic-font-size;
+	font-size: fonts.$basic-font-size;
 }
 
 body {
-  color: $text-color;
-  font-size: $paragraph;
-  line-height: $line-height;
+	color: colors.$text-color;
+	font-size: fonts.$paragraph;
+	line-height: fonts.$line-height;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $header-font;
-  font-weight: 600;
+	font-family: fonts.$header-font;
+	font-weight: 600;
 }
-
 
 html,
 button,
 input,
 select,
 textarea {
-  color: $text-color;
+	color: colors.$text-color;
 }
 
 a {
-  color: $text-color;
-  text-decoration: none;
+	color: colors.$text-color;
+	text-decoration: none;
 
-  &:visited {
-    outline: 0;
-  }
+	&:visited {
+		outline: 0;
+	}
 
-  &:focus,
-  &:active,
-  &:hover {
-    text-decoration: underline;
-    outline: 0;
-  }
+	&:focus,
+	&:active,
+	&:hover {
+		text-decoration: underline;
+		outline: 0;
+	}
 }
 
 i,
 em {
-  font-style: italic;
+	font-style: italic;
 }
 
 b,
 strong {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .br {
-  display: block;
+	display: block;
 }

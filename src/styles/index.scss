@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'fonts';
-@use 'typography';
-@use 'colors';
-@use 'variables';
+@forward 'reset';
+@forward 'fonts';
+@forward 'typography';
+@forward 'colors';
+@forward 'variables';
